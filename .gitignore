@@ -1,0 +1,13 @@
+# Ignore Maven target folders
+target/
+*.class
+
+# Ignore IntelliJ / VSCode files
+.idea/
+.vscode/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
