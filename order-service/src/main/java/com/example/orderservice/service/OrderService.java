@@ -5,6 +5,7 @@ import com.example.orderservice.entity.OrderStatus;
 import com.example.orderservice.repository.OrderRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
@@ -35,6 +36,8 @@ public class OrderService {
             order.setStatus(status);
             orderRepository.save(order);
         });
+        HashMap h = new HashMap();
+        
         return orderOpt;
     }
 
